@@ -1,5 +1,10 @@
 var persons = [
-    { type: 'user', name: 'Max Mustermann', age: 25, occupation: 'Chimney sweep' },
+    {
+        type: 'user',
+        name: 'Max Mustermann',
+        age: 25,
+        occupation: 'Chimney sweep'
+    },
     {
         type: 'admin',
         name: 'Jane Doe',
