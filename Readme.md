@@ -13,4 +13,10 @@ Learning Typscript by following the excersise and working on simple examples
 Reference Following this excersise to understand Typescript \
 https://github.com/mdevils/typescript-exercises/blob/master/exercises \
 https://www.reddit.com/r/typescript/ \
-https://github.com/katiewoolston/typescript-workshop-exercises
+https://github.com/katiewoolston/typescript-workshop-exercises \
+https://www.valentinog.com/blog/typescript/ \
+https://mariusschulz.com/ \
+https://svijaykoushik.github.io/
+
+DOM Types \
+https://definitelytyped.org/docs/flipsnap--flipsnap/interfaces/htmlelement.html

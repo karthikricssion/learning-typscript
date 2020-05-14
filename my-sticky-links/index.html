@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello world</title>
+
+    <style>
+        #searchBox select {
+            min-width: 100px;
+            height: 32px;
+            margin-right: 16px;
+            border: 1px solid #dfdfdf;
+            border-radius: 10px;
+            background-color: #fff;
+            font-size: 14px;
+        }
+
+        #searchBox input {
+            border: 1px solid #dfdfdf;
+            border-radius: 10px;
+            height: 32px;
+            width: 230px;
+            padding: 10px;
+            vertical-align: top;
+            outline: 0;
+            font-size: 14px;
+        }
+
+        #searchResultBox {
+            margin-top: 16px;
+        }
+
+        .card-text {
+            display: inline-block;
+            vertical-align: top;
+            border: 1px solid #dfdfdf;
+            padding: 8px;
+            margin-right: 8px;
+            border-radius: 3px;
+            text-decoration: none;
+            color: #333;
+            width: 250px;
+            min-height: 100px;
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+
+        .card-text:hover {
+            opacity: 0.8;
+        }
+
+        .card-text .link-content-holder h5 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .card-text .link-content-holder .tag-content-holder {
+            margin-top: 8px;
+        }
+
+        .card-text .link-content-holder .link-type {
+            font-style: italic;
+            font-size: 16px;
+        }
+
+        .card-text .link-content-holder .tag-content-holder .link-tag {
+            display: inline-block;
+            vertical-align: top;
+            border: 1px solid #dfdfdf;
+            padding: 4px;
+            margin-right: 4px;
+            margin-bottom: 4px;
+            font-size: 14px;
+            border-radius: 3px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="searchBox"></div>
+    <div id="searchResultBox"></div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
