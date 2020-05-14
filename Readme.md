@@ -1,6 +1,8 @@
 ### Learning by example
 Learning Typscript by following the excersise and working on simple examples
 
+[Demo](https://optimistic-lamarr-ad8f4a.netlify.app/)
+
 -> Search with multiple results types
 1. Learn how to implement functionalities 
 2. Learn how to use typscript effectively
