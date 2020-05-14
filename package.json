@@ -4,11 +4,13 @@
   "description": "Following this excersise to understand Typescript https://github.com/mdevils/typescript-exercises/blob/master/exercises",
   "main": "class.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^4.0.0"
+    "chalk": "^4.0.0",
+    "express": "^4.17.1"
   }
 }
