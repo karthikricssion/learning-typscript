@@ -1,7 +1,14 @@
+// Declaring search filter types 
 var filterTypes = ['name', 'type', 'url', 'tags'];
+// Declaring colors
+var cardBackgroundColor = ['#a5e2e8', '#ea68c2', '#e0f2b4'];
+// Select the search box div element using the id property
 var searchBoxDiv = document.getElementById('searchBox');
+// Select the search result div element using the id property
 var searchResultBox = document.getElementById('searchResultBox');
+// Creating a new <select></<select> input element programmatically
 var selectBox = document.createElement('select');
+// Creating a new <input /> element programmatically
 var searchInput = document.createElement('input');
 var searchTearm, selectType;
 var links = [
@@ -109,6 +116,24 @@ function filterByTerm(input, searchTerm, lookupKey) {
         });
     }
 }
+function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+    return array;
+}
+function getRandomCardColor() {
+    var shuffled = shuffle(cardBackgroundColor);
+    return shuffled[Math.floor(Math.random() * shuffled.length)];
+}
 function renderSearchResult(links) {
     searchResultBox.innerHTML = '';
     links.forEach(function (link) {
@@ -116,14 +141,24 @@ function renderSearchResult(links) {
         anchorContent.href = link.url;
         anchorContent.className = 'card-text';
         anchorContent.setAttribute('data-id', link.id.toString());
+        // Create new <div> element programmatially
         var anchorContentDiv = document.createElement('div');
+        // Create new <h5> element programmatically
         var headContent = document.createElement('h5');
+        // create new <span> element programmatically
         var typeContent = document.createElement('span');
+        // Adding the className to <a> element
         anchorContentDiv.className = 'link-content-holder';
+        anchorContent.style.backgroundColor = getRandomCardColor();
+        // Adding the className to <span> element
         typeContent.className = 'link-type';
+        // Adding the Text content to <h5> element
         headContent.innerHTML = link.name;
+        // Addding the Text content to <span> element 
         typeContent.innerHTML = link.type;
+        // Appending <h5> element to the <a> element
         anchorContentDiv.appendChild(headContent);
+        // Appendinng <span> element to the <a> element
         anchorContentDiv.appendChild(typeContent);
         if ('tags' in link) {
             var tagsContentDiv_1 = document.createElement('div');
